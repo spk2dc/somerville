@@ -1,0 +1,227 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WPL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848,2344</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Somerville" sap:VirtualizedContainerService.HintSize="668.8,2279.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="author" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="606.4,2167.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572.8,1979.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[index.ToString+&quot;: &quot;+currentItem]" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="529.6,1707.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1490.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - ")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="Senthil Kannan" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" ContentHash="FOzUkO1ysk6ytef2nfqHEg" DesignTimeRectangle="241, 777, 690, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Your Name *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Your Name *' /&gt;" Guid="be5d0912-c183-46cc-9e19-a219e8f199d1" InformativeScreenshot="13e33601a395aa114768040d7f5038c6.png" IsResponsive="True" Reference="PLqKkDDv7kiHptd_gi5HqA/ICxtAYqgikOHOAw9Nf5YYw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="241, 740, 921, 35" ElementType="Text" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Your Name ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Your Name ' check:text='Your Name *' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="senthil.kannan.61109@gmail.coms" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" ContentHash="tTs-J8DJOUC9rjUK-ynsKA" DesignTimeRectangle="241, 882, 690, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Your Email Address *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Your Email Address *' /&gt;" Guid="8b5e72fc-8ea4-430c-b7c1-9381becdff7d" InformativeScreenshot="bc66201f6e27b72c1197e6ef5789b514.png" IsResponsive="True" Reference="PLqKkDDv7kiHptd_gi5HqA/6LowYoCHOEujPMNeuBw17A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="241, 845, 921, 35" ElementType="Text" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl aaname='Your Email Address ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Email Address ' tag='LABEL' check:text='Your Email Address *' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'suggestion'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[title+&quot; by &quot;+author+&quot;, format: eAudiobook on Libby&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" ContentHash="K0634Aq3406wIHJxzyfhAw" DesignTimeRectangle="241, 985, 921, 142" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'suggestion'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Your Suggestion *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Your Suggestion *' /&gt;" Guid="dacae36b-46d9-4825-8b0b-c7ee48eb4fc4" InformativeScreenshot="151da0799f513744367ad4e003859ed7.png" IsResponsive="True" Reference="PLqKkDDv7kiHptd_gi5HqA/pUBKRVC_qkadUShubPagmA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="241, 950, 921, 35" ElementType="Text" FriendlyName="'suggestion'" FullSelectorArgument="&lt;webctrl aaname='Your Suggestion ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Suggestion ' tag='LABEL' check:text='Your Suggestion *' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" ContentHash="RLOaweVk9EOwhGTaYgAUGQ" DesignTimeRectangle="241, 1186, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' check:text='Submit' /&gt;" Guid="3505262f-fbdd-4b55-9de5-d53004aa2a11" InformativeScreenshot="f6174f70f1240303da9013a2a69daa4d.png" Reference="PLqKkDDv7kiHptd_gi5HqA/GN3Hu5bvcEy7krAOOqHUaQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'another'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable ContentHash="kf9hTwbrMEKpiUTUfwd9kA" CvTextArea="177, 737, 261, 25" CvTextArgument="Go back to the form" CvType="Text" DesignTimeRectangle="178, 733, 261, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'another'" FullSelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='link' text='Go back to the form' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='link' text='Go back to the form' check:text='Go back to the form' /&gt;" Guid="8ae12508-dd89-48cb-a076-01b8203fcc9a" InformativeScreenshot="d1dd3b267b2e495f599e60f66b73436d.png" Reference="PLqKkDDv7kiHptd_gi5HqA/WF5AycSbrUuDtA6aoJbiRA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Recommend a Purchase | Somerville Public Library - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="177, 520, 467, 48" CvTextArgument="Recommend a Purchase" CvType="Text" DesignTimeRectangle="178, 495, 1226, 94" FriendlyName="'another'" FullSelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='grouping' text='Recommend a Purchase' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='grouping' text='Recommend a Purchase' check:text='Recommend a Purchase' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="TSlc1fl3zE68ns47FIYFCQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHXSURBVDhPjdJPSJNxHMfxx5GJ6ZJ53aVFmFumh2QWpRIaKrb5h6Ee9FIEO4ggrrAQiZwkY0IJQbElnjzoakV08BoikUgiVkLTpIMX8ZQRlbre32e/ufk0xB+8eJ7n9/1+P/ttzzTjanpZn1SAsziDPLVn7NGfDyw2TWjEDNaxhgguItlzaIATMhjHBjbV/QfYVE+Wos8cWGzehwx8QxU82MIuOlXPoQGPIQHzMOM0vqu9btWjh+gDxkXhBv7iB4IYx2/1XKN69AC56g/eTxbN7gvp2mYuFTZF6ybZlyH5VLHdHK0Lds3ac6UnFNc094uGVMCVsV6tuC+cTdFj94XbnCODl13T128xFCDsoTvS2H7B7y+j1kpPR0n/E3PnuxJ5W4mA1jdXj5UOPMqnOIufWC3uez7quP3Mzr2N+wdcV7CNj447T63dX3NTAc2vruVVBAYsFOcQT7OI99hL21s6R8DNBWsqoOV1bU758FABRWNAJktyAu+yJREgy/O20nT+3ph8hSMH9MTyUwGuKZe8gROQ42YaSrfMb2Od+JU4/f6icBy9iOAL/iA5tIMYougn4GTW5v8BwgQJOoUefMYa7qIIOZAeLc5/IVOAkRPV0IeSOIGa0rR/ZzBoFs8jEagAAAAASUVORK5CYII=" InformativeScreenshot="b788aa653a38e94b2a6f181794e6e52c.jpg" Reference="PLqKkDDv7kiHptd_gi5HqA/yMDr1aozBUyT4vuFB6tX3A" Selector="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" Title="Recommend a Purchase | Somerville Public Library" Url="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

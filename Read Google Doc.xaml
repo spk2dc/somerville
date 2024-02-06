@@ -1,0 +1,145 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Read_Google_Doc" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Docs;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="finalList" Type="OutArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848,1137.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Read_Google_Doc_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.GSuite.Activities.Docs</x:String>
+      <x:String>UiPath.GSuite.Activities.Docs.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.GSuite.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Read_Google_Doc" sap:VirtualizedContainerService.HintSize="592,1072.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="list" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ugad:GoogleDocsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="senthil.kannan.61109@gmail.com" Action="UseExisting" DisplayName="Use Google Document" DocumentId="https://docs.google.com/document/d/1gH3txJhv3CqeLtyf6Lq8WhtHF5vZmxPhwMV_BdUDVYI/edit?usp=drivesdk" DocumentName="Audiobook List" sap:VirtualizedContainerService.HintSize="529.6,960.8" sap2010:WorkflowViewState.IdRef="GoogleDocsApplicationScope_1" Mode="Browse" UseConnectionService="False" UserEmail="senthil.kannan.61109@gmail.com">
+      <ugad:GoogleDocsApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ugad:IGoogleDocTarget">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ugad:IGoogleDocTarget" Name="Document" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,678.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uga:ReadAllText ContinueOnError="{x:Null}" DocumentId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read All Text" GoogleDoc="[Document]" sap:VirtualizedContainerService.HintSize="433.6,140.8" sap2010:WorkflowViewState.IdRef="ReadAllText_1" Result="[list]" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[list]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[list.Split("FCPL - no limit")(1)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[finalList]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[list.Split(vbLf, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;final list(0): &quot;+finalList(0)]" />
+          </Sequence>
+        </ActivityAction>
+      </ugad:GoogleDocsApplicationScope.Body>
+      <ugad:GoogleDocsApplicationScope.CredentialID>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ugad:GoogleDocsApplicationScope.CredentialID>
+      <ugad:GoogleDocsApplicationScope.CredentialSecret>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ugad:GoogleDocsApplicationScope.CredentialSecret>
+    </ugad:GoogleDocsApplicationScope>
+  </Sequence>
+</Activity>

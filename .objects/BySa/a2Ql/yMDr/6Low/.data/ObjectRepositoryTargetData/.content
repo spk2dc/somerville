@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tTs-J8DJOUC9rjUK-ynsKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" DesignTimeRectangle="241, 882, 690, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-submitted-yo…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Your Email Address *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Your Email Address *' /&gt;" Guid="8b5e72fc-8ea4-430c-b7c1-9381becdff7d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="241, 845, 921, 35" ElementType="Text" FriendlyName="'Your Email Address *'" FullSelectorArgument="&lt;webctrl aaname='Your Email Address ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Email Address ' tag='LABEL' check:text='Your Email Address *' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bc66201f6e27b72c1197e6ef5789b514.png" xmlns="">0TaZScGwDw0aURB7EIZzLIg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

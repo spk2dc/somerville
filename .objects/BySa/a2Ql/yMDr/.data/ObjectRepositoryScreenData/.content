@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="TSlc1fl3zE68ns47FIYFCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHXSURBVDhPjdJPSJNxHMfxx5GJ6ZJ53aVFmFumh2QWpRIaKrb5h6Ee9FIEO4ggrrAQiZwkY0IJQbElnjzoakV08BoikUgiVkLTpIMX8ZQRlbre32e/ufk0xB+8eJ7n9/1+P/ttzzTjanpZn1SAsziDPLVn7NGfDyw2TWjEDNaxhgguItlzaIATMhjHBjbV/QfYVE+Wos8cWGzehwx8QxU82MIuOlXPoQGPIQHzMOM0vqu9btWjh+gDxkXhBv7iB4IYx2/1XKN69AC56g/eTxbN7gvp2mYuFTZF6ybZlyH5VLHdHK0Lds3ac6UnFNc094uGVMCVsV6tuC+cTdFj94XbnCODl13T128xFCDsoTvS2H7B7y+j1kpPR0n/E3PnuxJ5W4mA1jdXj5UOPMqnOIufWC3uez7quP3Mzr2N+wdcV7CNj447T63dX3NTAc2vruVVBAYsFOcQT7OI99hL21s6R8DNBWsqoOV1bU758FABRWNAJktyAu+yJREgy/O20nT+3ph8hSMH9MTyUwGuKZe8gROQ42YaSrfMb2Od+JU4/f6icBy9iOAL/iA5tIMYougn4GTW5v8BwgQJOoUefMYa7qIIOZAeLc5/IVOAkRPV0IeSOIGa0rR/ZzBoFs8jEagAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" Title="Recommend a Purchase | Somerville Public Library" Url="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase">
+      <imageRef attrName="InformativeScreenshot" originalValue="b788aa653a38e94b2a6f181794e6e52c.jpg" xmlns="">0t3ZwfOWNe02JXFX5hqmQBA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

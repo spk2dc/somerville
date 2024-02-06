@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kf9hTwbrMEKpiUTUfwd9kA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvTextArea="177, 737, 261, 25" CvTextArgument="Go back to the form" CvType="Text" DesignTimeRectangle="178, 733, 261, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Go back to the form'" FullSelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='link' text='Go back to the form' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='link' text='Go back to the form' check:text='Go back to the form' /&gt;" Guid="8ae12508-dd89-48cb-a076-01b8203fcc9a" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Recommend a Purchase | Somerville Public Library - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="177, 520, 467, 48" CvTextArgument="Recommend a Purchase" CvType="Text" DesignTimeRectangle="178, 495, 1226, 94" FriendlyName="'Recommend a Purchase'" FullSelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='grouping' text='Recommend a Purchase' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recommend a Purchase | Somerville Public Library' role='document' /&gt;&lt;ctrl role='grouping' text='Recommend a Purchase' check:text='Recommend a Purchase' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d1dd3b267b2e495f599e60f66b73436d.png" xmlns="">03QYf1BSmn024w6ojNjs22Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RLOaweVk9EOwhGTaYgAUGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.somervillepubliclibrary.org/how-do-i/recommend-purchase" DesignTimeRectangle="241, 1186, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' check:text='Submit' /&gt;" Guid="3505262f-fbdd-4b55-9de5-d53004aa2a11" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recommend a Purchase | Somerville Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f6174f70f1240303da9013a2a69daa4d.png" xmlns="">0wE2VKIqEoEqfAyODXd9Qgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
